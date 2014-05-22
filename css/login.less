@@ -1,0 +1,80 @@
+@import "args";
+
+@h-login-block: 350px;
+@h-login-subblock: @h-login-block - 2*@p-div;
+@h-user-block: 340px;
+@h-user-subblock: @h-user-block - 2*@p-div;
+
+#login-block {
+    //第一个content block
+    height: @h-login-block;
+    
+    #poster {
+        height: @h-login-subblock;
+        float: left;
+        
+        #poster-img {
+            position: relative;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            width: @w-sub-block-half;
+            max-height: @h-login-subblock - @p-div;
+            border-radius: 13px;
+        }
+        
+        #now-button {
+            position: relative;
+            top: @p-div / 2;
+            margin-left: @w-sub-block-half / 3 * 0.89;
+            z-index: 2;
+        }
+    }
+    
+    #login {
+        //登陆div
+        float: right;
+//  background-color: rgba(204,153,255,0.5);
+        width: @w-sub-block-half;
+        height: @h-login-subblock;
+        margin-top: auto;
+        
+        input {
+            margin-bottom: 15px;
+        }
+        
+        #login-form {
+            margin-left: ( (@w-block - 3*@p-div) / 2 - 2*@p-div - @w-input) / 2;
+            margin-top: ( (@w-block - 3*@p-div) / 2 - 2*@p-div - @w-input) / 2 *0.75;
+        }
+    }
+}
+
+#user-block {
+    height: @h-user-block;
+    #hotuser {
+        width: @w-sub-block-half;
+        height: @h-user-subblock;
+        float: left;
+        table {
+            margin-left: @w-sub-block-half / 8;
+            line-height: 60px;
+            tr { td {
+                    width: @w-sub-block-half * 0.4;
+                    img {
+                        float: left;
+    }}}}}
+    
+    #newuser {
+        width: @w-sub-block-half;
+        height: @h-user-subblock;
+        float: right;
+        table {
+            margin-left: 5px;
+            line-height: 80px;
+            tr { td {
+                width: @w-sub-block-half * 0.5;
+                img {
+                    float: left;
+}}}}}}
+

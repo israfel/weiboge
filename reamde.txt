@@ -1,0 +1,7 @@
+本次pj尝试使用了一下less，感觉有两处优点：1.css也可以写成html样的嵌套结构，更加直观。2.变量和函数对css的编写和细节上的调整比较有帮助。
+
+用到的资源来源于：
+LINE DECO
+DOGE2048	http://doge2048.com/
+Pixiv		http://www.pixiv.net/member_illust.php?illust_id=42943643&mode=medium
+sina weibo	http://weibo.com/

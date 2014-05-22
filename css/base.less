@@ -1,0 +1,327 @@
+@import "args";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+    font-size: 11pt;
+}
+
+body {
+    margin-top: @h-navbar * 1.20;
+    position: relative;
+    background: url("../img/bg_lakeblue - original.png") fixed;
+}
+
+div {
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+a {
+    color: rgba(255, 102, 0, 1);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(0,255,153,1);
+}
+
+a:focus {
+    outline: none;
+    color: rgba(0,255,153,1);
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 32767;
+    min-height: @h-navbar;
+//  background-color: black;
+    border-radius: 0;
+    .gradient(lighten(rgba(169, 168, 20, 0.85),10%),lighten(rgba(153, 153, 0, 0.5),10%));
+    opacity: 0.75;
+    transition: opacity .2s ease-in-out;
+}
+
+.navbar-button {
+    width: 1.414*@h-navbar;
+//  height: @h-navbar;
+    display: inline-block;
+    margin-bottom: @h-navbar * 0.35;
+}
+    
+.navbar-logo {
+    height: @h-navbar;
+    vertical-align: bottom;
+    border-radius: 0.05*@h-navbar;
+}
+
+.sidebar {
+    position: relative;
+    text-align: center;
+    min-height: 500px;
+    width: @w-sidebar;
+//  background-image: -moz-linear-gradient(top, #8fa1ff, #3757fa); /* Firefox */
+//  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 234, 0, 0.8)), color-stop(1, rgba(166, 223, 227, 0.3))); /* Saf4+, Chrome */
+//  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endColorstr='#538300', GradientType='0'); /* IE*/
+    .gradient(rgba(255, 234, 0, 0.8), rgba(166, 223, 227, 0.3));
+//  background-color: pink;
+//  .box-shadow(darken(pink, 20%));
+    
+    img {
+        width: @w-sidebar - 16px;
+        height: @w-sidebar - 16px;
+        margin: 8px;
+        border-radius: 7px;
+    }
+    
+    .sidebar-change-avatar {
+        position: absolute;
+        z-index: 100;
+        top: 140px;
+        visibility: hidden;
+    }
+    
+    .sidebar-id {
+        font-size: 12pt;
+        font-weight: bold;
+        letter-spacing: 0.4px;
+    }
+    
+    .sidebar-comefrom {
+        font-size: 10pt;
+        color: #666;
+    }
+    
+    table {
+        width: @w-sidebar - 16px;
+        margin: auto;
+        line-height: 20px;
+        text-align: center;
+        td.has-right-border {
+            border-right: 2px solid #6AB2E7;
+        }
+    }
+}
+
+.header {
+    //**NOT**导航条
+//  max-height: @h-head;
+    background: rgba(153, 204, 255, 0.5);
+    margin-bottom: @p-div;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.header-logo {
+    height: @h-head;
+}
+
+.container {
+    //网页中部的主要内容
+}
+
+.block {
+    //网页总共分成header container footer三个block
+    width: @w-block;
+    margin: auto;
+    margin-bottom: @p-div;
+}
+
+.content-block {
+    //内容块，container内的基本元素
+    min-height: 100px;
+    background-image: url(../img/duck_and_bear_recursive_300.png);
+    .box-shadow(darken(#CCCCCC, 20%));
+    margin-bottom: @p-div;
+    padding: @p-div;
+}
+
+.sub-content-block {
+    //content-block的细分
+    background-color: rgba(255, 255, 224, 0.75);
+//  border-bottom: 2px solid rgba(205, 103, 51, 0.347);
+//  border-right: 2px solid rgba(205, 103, 51, 0.347);
+    .glow(8px, rgba(255, 255, 224, 0.75));
+    width: @w-sub-block;
+    padding: @p-div;
+}
+
+.half-block {
+    width: @w-sub-block-half;
+}
+
+.footer {
+    width: 100%!important;
+    min-height: 150px;
+    background-color: rgba(153, 204, 255, 0.5);
+    margin-top: @p-div;
+    margin-bottom: 0;
+    padding-top: 2*@p-div;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.copyright {
+    margin-top: 40px;
+    font-size: 10pt;
+    color: #333333;
+}
+
+.title {
+    font-size: 25pt;
+    font-weight: bold;
+    display: block;
+    margin-bottom: @p-div;
+}
+
+.subtitle {
+    font-size: 15pt;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-bottom: @p-div;
+}
+
+
+//控件
+
+input[type="password"], input[type="username"], input[type="text"] {
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    
+    height: 18px;
+    width: @w-input;
+    padding: 4px;
+    font-size: 11pt;
+    line-height: 18px;
+    
+    transition: box-shadow 0.5s ease-out;
+    -webkit-transition: box-shadow 0.5s ease-out;
+    -moz-transition: box-shadow 0.5s ease-out;
+}
+
+input[type=checkbox] {
+//  position: absolute;
+////  overflow: hidden;
+//  clip: rect(0 0 0 0);
+//  height: 1px;
+//  width: 1px;
+//  margin: -1px;
+//  padding: 0;
+//  border: 0;
+}
+
+input:focus {
+    outline: none;
+    border:#87C6F9 1px solid;
+    .glow(8px, rgba(103, 166, 217, 1));
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0s;
+}
+
+input[type=checkbox]:focus {
+    box-shadow: none;
+}
+
+label[class=checkbox] {    
+//  background-image: url("../img/web-two-style.png");
+//
+//  background-position: 0 -20px;
+//  
+//  padding-left: 22px;
+//  height: 20px;
+//  display: inline-block;
+//  line-height: 20px;
+//  background-repeat: no-repeat;
+//  background-position: 0 0;
+////  font-size: 14px;
+//  vertical-align: middle;
+//  cursor: pointer;
+}
+
+//TODO:不同按钮的样式
+.button, input[type=submit] {
+//  -webkit-transition-property: background, color;
+//  -moz-transition-property: background, color;
+//  transition-property: background, color;
+//  -webkit-transition-duration: 0.3s;
+//  -moz-transition-duration: 0.3s;
+//  transition-duration: 0.3s;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: #f18d05;
+    color: white;
+    text-shadow: none;
+    border: none;
+    
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    height: 32px;
+    line-height: 32px;
+    padding: 0px 25.6px;
+    font-weight: 300;
+    font-size: 14px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover {
+    color: white;
+}
+
+.button:focus {
+    outline: none;
+}
+
+//表情
+.icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/icon.png");
+    background-repeat: no-repeat;
+}
+.icon-face {
+    background-position: -275px 0px;
+}
+.icon-face:hover {
+    background-position: -250px 0px;
+}
+.icon-image {
+    background-position: -275px -25px;
+}
+.icon-image:hover {
+    background-position: -250px -25px;
+}
+.icon-video {
+    background-position: -275px -50px;
+}
+.icon-video:hover {
+    background-position: -250px -50px;
+}

@@ -1,0 +1,155 @@
+@import "args";
+
+@s-weibo-avatar: 50px;
+@p-weibo-content: 7px;
+@w-weibo-content: @w-sub-block - @s-weibo-avatar - @p-div - 2 * @p-weibo-content;
+
+.block {
+    width: @w-block + @w-sidebar + 0.5*@p-div;
+}
+
+body {
+    margin-top: @h-navbar * 1.20;
+}
+
+.container {
+    .content-block {
+        float: left;
+    }
+    
+    .sidebar {
+        float: right;
+        top: 0;
+    }
+}
+
+.input-box {
+    resize: none;
+    width: @w-input-box;
+    height: @h-input-box;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 9px;
+    padding: 5px;
+    font-size: 14px;
+    font-family: @font;
+    line-height: 18px;
+    overflow-y: hidden;
+}
+.input-box:focus {
+    outline: none;
+}
+
+.input-buttons {
+    float: right;
+    margin-top: 15px;
+}
+
+.commit-button, .save-button {
+//  float: right;
+    width: @h-input-box;
+//  height: @h-input-box;
+}
+
+.input-misc {
+    width: @w-input-box;
+    margin-top: 5px;
+    padding-left: 5px;
+    
+    #limit-message {
+        float: right;
+        color: #F18732;
+    }
+}
+
+.weibo-avatar {
+    width: @s-weibo-avatar;
+    height: @s-weibo-avatar;
+    border-bottom: 2px #CCC solid;
+    border-right: 2px #CCC solid;
+    border-radius: 3px;
+    float: left;
+}
+
+.weibo-rest {
+//  float: right;
+    position: relative;
+    left: 16px;
+    border-radius: 0;
+}
+
+.weibo-id {
+    float: left;
+    padding: 0 0 @p-weibo-content @p-weibo-content;
+}
+
+.weibo-content {
+    padding: @p-weibo-content;
+    width: @w-weibo-content;
+    background-color: rgba(255,255,255,0.69);
+    .glow(@p-weibo-content, darken(rgba(255,255,255,0.69), 10%));
+}
+
+.weibo-image {
+    max-width: @w-weibo-content - 12*@p-weibo-content;
+    margin: @p-weibo-content @p-weibo-content 0 @p-weibo-content;
+    border: #CCCCCC 1px solid;
+}
+
+.weibo-info {
+    font-size: 10pt;
+    width: @w-weibo-content;
+    padding: @p-weibo-content 0 0 @p-weibo-content;
+}
+.weibo-time {
+    float: left;
+}
+.weibo-operation {
+    float: right;
+}
+
+.weibo-forward {
+    font-size: 10pt;
+    margin: @p-weibo-content 0 0 @p-weibo-content;
+    padding: @p-weibo-content @p-weibo-content @p-weibo-content 0;
+    background-color: lighten(rgba(204,204,204,0.5), 10%);
+    width: @w-weibo-content - 2*@p-weibo-content;
+    border-radius: 5px; 
+    .glow(@p-weibo-content, #CCCCCC);
+}
+
+//-f means forward
+.weibo-id-f {
+    padding: 0 0 @p-weibo-content @p-weibo-content;
+}
+
+.weibo-content-f {
+    padding: @p-weibo-content;
+    width: @w-weibo-content;
+}
+
+.weibo-image-f {
+    max-width: @w-weibo-content - 14*@p-weibo-content;
+    margin: @p-weibo-content @p-weibo-content 0 @p-weibo-content;
+    border: #CCCCCC 1px solid;
+}
+
+.weibo-info-f {
+    font-size: 9pt;
+    width: @w-weibo-content;
+    padding: @p-weibo-content 0 0 @p-weibo-content;
+}
+.weibo-time-f {
+    float: left;
+}
+.weibo-operation-f {
+    float: right;
+}
+
+
+.weibo-id, .weibo-id-f {
+    font-weight: bold;
+}
+.weibo-info, .weibo-info-f {
+    color: #0099CC;
+}
+

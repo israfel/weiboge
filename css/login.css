@@ -1,0 +1,68 @@
+#login-block {
+  height: 350px;
+}
+#login-block #poster {
+  height: 310px;
+  float: left;
+}
+#login-block #poster #poster-img {
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 314.5px;
+  max-height: 290px;
+  border-radius: 13px;
+}
+#login-block #poster #now-button {
+  position: relative;
+  top: 10px;
+  margin-left: 93.30166666666666px;
+  z-index: 2;
+}
+#login-block #login {
+  float: right;
+  width: 314.5px;
+  height: 310px;
+  margin-top: auto;
+}
+#login-block #login input {
+  margin-bottom: 15px;
+}
+#login-block #login #login-form {
+  margin-left: 57.25px;
+  margin-top: 42.9375px;
+}
+#user-block {
+  height: 340px;
+}
+#user-block #hotuser {
+  width: 314.5px;
+  height: 300px;
+  float: left;
+}
+#user-block #hotuser table {
+  margin-left: 39.3125px;
+  line-height: 60px;
+}
+#user-block #hotuser table tr td {
+  width: 125.80000000000001px;
+}
+#user-block #hotuser table tr td img {
+  float: left;
+}
+#user-block #newuser {
+  width: 314.5px;
+  height: 300px;
+  float: right;
+}
+#user-block #newuser table {
+  margin-left: 5px;
+  line-height: 80px;
+}
+#user-block #newuser table tr td {
+  width: 157.25px;
+}
+#user-block #newuser table tr td img {
+  float: left;
+}

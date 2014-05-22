@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Wow, register page!</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+	</head>
+	<body>
+		<!--<div class="header block">
+			<img src="img/doge.gif" class="header-logo"/>
+			Wow, there should be a title here.
+		</div>-->
+		
+		<div class="navbar" id="navbar" onmouseover="setOpaque()" onmouseleave="unsetOpaque()">
+			<!--
+            	作者：felix.ym.liu@gmail.com
+            	时间：2014-05-20
+            	描述：导航栏
+            -->
+			<center>
+				<span class="navbar-button">首页</span>
+				<span class="navbar-button">Israfel</span>
+				<img src="" alt="LOGO" class="navbar-logo" id="navbar-logo"/>
+				<span class="navbar-button">设置</span>
+				<span class="navbar-button">登出</span>
+			</center>
+		</div>
+		
+		<div class="container block">
+			<div class="content-block">
+				<div class="sub-content-block" id="register">
+					<div id="sub-div-1">
+						<span class="title">
+							注册微博
+						</span>
+						<table border="0" cellspacing="" cellpadding="">
+							<tr><td><label for="email">邮箱：</label></td><td><input id="email" type="text" /><br /></td></tr>
+							<tr id="email-err" class="err-message"><td></td><td>请输入正确的邮箱格式</td></tr>
+							<tr><td><label for="password">密码：</label></td><td><input id="password" type="password" /></td></tr>
+							<tr><td><label for="password_2">确认密码：</label></td><td><input id="password_2" type="password" /></td></tr>
+							<tr id="passwd-err" class="err-message"><td></td><td>请输入相同的密码</td></tr>
+							<tr><td><label for="nickname">昵称：</label></td><td><input id="nickname" type="text" /></td></tr>
+							<tr id="nickname-err" class="err-message"><td></td><td>请输入正确的昵称格式</td></tr>
+							<tr><td><label for="comefrom">来自：</label></td><td><input id="comefrom" type="text" /></td></tr>
+							<tr id="comefrom-err" class="err-message"><td></td><td>请输入正确的来自格式</td></tr>
+							<tr><td></td><td><a href="javascript:void(0);" onclick="checkForm()" class="button">确认提交</a></td></tr>
+						</table>
+					</div>
+					<div id="sub-div-2">
+						已经有账号？<br /><br />
+						<a href="login.html" class="button">立即登录</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="block footer">
+			<!--
+            	其他链接&内容
+            -->
+            <center>
+				<a href="http://weibo.com/whynotme">关注Israfel@Sina</a><br /><br />
+            	<span class="copyright">© 1999-2014 Doge, Inc. or its affiliates</span>
+            </center>
+		</div>
+		
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

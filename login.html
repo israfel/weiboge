@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Wow, login page!</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+	<body>
+		<div class="block header">
+            <!--<img class="header-logo" src="img/doge.gif" alt="LOGO"/>
+            Wow, there should be a title here.-->
+            
+		</div>
+		
+		<div class="navbar" id="navbar" onmouseover="setOpaque()" onmouseleave="unsetOpaque()">
+			<!--
+            	作者：felix.ym.liu@gmail.com
+            	时间：2014-05-20
+            	描述：导航栏
+            -->
+			<center>
+				<span class="navbar-button">首页</span>
+				<span class="navbar-button">Israfel</span>
+				<img src="" alt="LOGO" class="navbar-logo" id="navbar-logo"/>
+				<span class="navbar-button">设置</span>
+				<span class="navbar-button">登出</span>
+			</center>
+		</div>
+		
+		<div class="block container">
+			<div class="content-block" id="login-block">
+				<!--
+                	“立即加入”按钮&登陆框
+               -->
+               <div class="sub-content-block half-block" id="poster">
+               		<!--
+                       	宣传标语
+                    -->
+                    <img src="img/poster_ped.jpg" id="poster-img" />
+                    <a href="register.html" class="button" id="now-button">立即加入！</a>
+               </div>
+               <div class="sub-content-block half-block" id="login">
+	               	<!--
+						登陆模块
+                    -->
+                    <form id="login-form" action="" method="post">
+                    	<input type="username" id="" placeholder="用户名 / 邮箱" required/>
+                    	<br />
+                    	<input type="password" id="" placeholder="密码" required/>
+                    	<br />
+                    	<label class="checkbox">
+                    		<input type="checkbox" id=""/>
+                    		记住我
+                    	</label>
+                    	<br /><br />
+                    	<input type="submit" name="" id="" value="登陆" />
+                    	<!--<a href="#" class="button">登陆</a>-->
+                    	<br /><br />
+                    	<a href="register.html">还没有账号？立即注册！</a>
+                    </form>
+               </div>
+			</div>
+			
+			<div class="content-block" id="user-block">
+				<div class="sub-content-block half-block" id="hotuser">
+					<!--
+                	热门用户
+	                -->
+	                <span class="subtitle">热门用户</span>
+	                <table border="0" cellspacing="" cellpadding="">
+	                	<tr><td><img src="img/userAvatar/hancheng.jpg"/>寒辰</td><td align="right">10000粉丝</td></tr>
+	                	<tr><td><img src="img/userAvatar/lofter.jpg"/>网易lofter</td><td align="right">1000粉丝</td></tr>
+	                	<tr><td><img src="img/userAvatar/revlis.jpg"/>revlis</td><td align="right">100粉丝</td></tr>
+	                	<tr><td><img src="img/userAvatar/xiaoyan.jpg"/>小烟</td><td align="right">10粉丝</td></tr>
+	                </table>
+				</div>
+				<div class="sub-content-block half-block" id="newuser">
+					<!--
+                	新用户
+	                -->
+	                <span class="subtitle">新用户</span>
+	                <table border="0" cellspacing="" cellpadding="">
+	                	<tr><td><img src="img/userAvatar/feidian.jpg"/>复旦沸点漫…</td>
+	                		<td><img src="img/userAvatar/jx3.jpg"/>剑网三官方…</td>
+	                	</tr>
+	                	<tr><td><img src="img/userAvatar/lizi.jpg"/>一切妨碍栗…</td>
+	                		<td><img src="img/userAvatar/naiyoujie.jpg"/>奶油姐姐</td>
+	                	</tr>
+	                	<tr><td><img src="img/userAvatar/tangque.jpg"/>唐缺_九州</td>
+	                		<td><img src="img/userAvatar/anni.jpg"/>伟大的安妮</td>
+	                	</tr>
+	                </table>
+				</div>
+			</div>
+		</div>
+		
+		<div class="block footer">
+			<!--
+            	其他链接&内容
+            -->
+            <center>
+				<a href="http://weibo.com/whynotme">关注Israfel@Sina</a><br /><br />
+            	<span class="copyright">© 1999-2014 Doge, Inc. or its affiliates</span>
+            </center>
+		</div>
+		
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

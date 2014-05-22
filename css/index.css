@@ -1,0 +1,128 @@
+.block {
+  width: 959px;
+}
+body {
+  margin-top: 90px;
+}
+.container .content-block {
+  float: left;
+}
+.container .sidebar {
+  float: right;
+  top: 0;
+}
+.input-box {
+  resize: none;
+  width: 509px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 9px;
+  padding: 5px;
+  font-size: 14px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  line-height: 18px;
+  overflow-y: hidden;
+}
+.input-box:focus {
+  outline: none;
+}
+.input-buttons {
+  float: right;
+  margin-top: 15px;
+}
+.commit-button,
+.save-button {
+  width: 100px;
+}
+.input-misc {
+  width: 509px;
+  margin-top: 5px;
+  padding-left: 5px;
+}
+.input-misc #limit-message {
+  float: right;
+  color: #F18732;
+}
+.weibo-avatar {
+  width: 50px;
+  height: 50px;
+  border-bottom: 2px #CCC solid;
+  border-right: 2px #CCC solid;
+  border-radius: 3px;
+  float: left;
+}
+.weibo-rest {
+  position: relative;
+  left: 16px;
+  border-radius: 0;
+}
+.weibo-id {
+  float: left;
+  padding: 0 0 7px 7px;
+}
+.weibo-content {
+  padding: 7px;
+  width: 605px;
+  background-color: rgba(255, 255, 255, 0.69);
+  box-shadow: 0 0 7px rgba(230, 230, 230, 0.69);
+  -moz-box-shadow: 0 0 7px rgba(230, 230, 230, 0.69);
+  -webkit-box-shadow: 0 0 7px rgba(230, 230, 230, 0.69);
+}
+.weibo-image {
+  max-width: 521px;
+  margin: 7px 7px 0 7px;
+  border: #CCCCCC 1px solid;
+}
+.weibo-info {
+  font-size: 10pt;
+  width: 605px;
+  padding: 7px 0 0 7px;
+}
+.weibo-time {
+  float: left;
+}
+.weibo-operation {
+  float: right;
+}
+.weibo-forward {
+  font-size: 10pt;
+  margin: 7px 0 0 7px;
+  padding: 7px 7px 7px 0;
+  background-color: rgba(230, 230, 230, 0.5);
+  width: 591px;
+  border-radius: 5px;
+  box-shadow: 0 0 7px #cccccc;
+  -moz-box-shadow: 0 0 7px #cccccc;
+  -webkit-box-shadow: 0 0 7px #cccccc;
+}
+.weibo-id-f {
+  padding: 0 0 7px 7px;
+}
+.weibo-content-f {
+  padding: 7px;
+  width: 605px;
+}
+.weibo-image-f {
+  max-width: 507px;
+  margin: 7px 7px 0 7px;
+  border: #CCCCCC 1px solid;
+}
+.weibo-info-f {
+  font-size: 9pt;
+  width: 605px;
+  padding: 7px 0 0 7px;
+}
+.weibo-time-f {
+  float: left;
+}
+.weibo-operation-f {
+  float: right;
+}
+.weibo-id,
+.weibo-id-f {
+  font-weight: bold;
+}
+.weibo-info,
+.weibo-info-f {
+  color: #0099CC;
+}

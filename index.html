@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Wow, my index page!</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div class="navbar" id="navbar" onmouseover="setOpaque()" onmouseleave="unsetOpaque()">
+			<!--
+            	作者：felix.ym.liu@gmail.com
+            	时间：2014-05-20
+            	描述：导航栏
+            -->
+			<center>
+				<span class="navbar-button">首页</span>
+				<span class="navbar-button">Israfel</span>
+				<img src="" alt="LOGO" class="navbar-logo" id="navbar-logo"/>
+				<span class="navbar-button">设置</span>
+				<span class="navbar-button">登出</span>
+			</center>
+		</div>
+		
+		<div class="container block">
+			<div class="sidebar" id="sidebar">
+				<!--
+                	作者：felix.ym.liu@gmail.com
+                	时间：2014-05-18
+                	描述：边栏
+                -->
+                <img src="img/userAvatar/admin.jpg" onmouseover="showButton()" onmouseleave="hideButton()"/>
+                <a href="" class="button sidebar-change-avatar" id="btn-c-a" onmouseover="showButton()" onmouseleave="hideButton()">更换头像</a>
+                <a href="index.html" class="sidebar-id">Israfel</a><br />
+                <span class="sidebar-comefrom">
+                	来自：马达加斯加
+                </span><br /><br />
+                <table class="user-info">
+                	<tr><td class="has-right-border">粉丝</td><td class="has-right-border">关注</td><td>微博</td></tr>
+                	<tr>
+                		<td class="has-right-border"><a href="">10</a></td>
+                		<td class="has-right-border"><a href="">10</a></td>
+                		<td><a href="">100</a></td>
+                	</tr>
+                </table>
+			</div>
+			
+			<div class="content-block input-div">
+				<!--
+                	作者：felix.ym.liu@gmail.com
+                	时间：2014-05-18
+                	描述：输入框
+                -->
+				<div class="sub-content-block">
+                    <textarea class="input-box" id="input-box" onfocus="checkWords()" onkeyup="checkWords()"></textarea>
+                    <div class="input-buttons">
+		                <a href="" class="commit-button button">发送</a><br /><br />
+		                <a href="" class="save-button button">存草稿</a>
+                    </div>
+                    <div class="input-misc">
+                    	<a href=""><span class="icon icon-face"></span>表情</a>
+                    	<a href=""><span class="icon icon-image"></span>图片</a>
+                    	<a href=""><span class="icon icon-video"></span>视频</a>
+                    	<span id="limit-message">  
+                    		内容限140字内
+						</span>  
+                    </div>
+				</div>
+			</div>
+			
+			<div class="content-block">
+				<div class="sub-content-block">
+					<!--
+                    	作者：felix.ym.liu@gmail.com
+                    	时间：2014-05-19
+                    	描述：test微博1：普通状态
+                    -->
+                    <img src="img/userAvatar/admin.jpg" class="weibo-avatar"/>
+                    <div class="weibo-rest">
+                    	<span class="weibo-id"><a href="">Israfel</a></span><br />
+	                    <div class="weibo-content">
+	                    	看纯黑的实况太吓人了。。我是说纯黑太吓人了。。
+	                    </div>
+	                    <div class="weibo-info">
+	                    	<span class="weibo-time">5月9日 20:20</span>
+							<span class="weibo-operation">转发 | 收藏 | 评论(4)</span>
+	                    </div>
+                    </div>
+				</div>
+			</div>
+			
+			<div class="content-block">
+				<div class="sub-content-block">
+					<!--
+                    	作者：felix.ym.liu@gmail.com
+                    	时间：2014-05-19
+                    	描述：test微博2：图片状态
+                    -->
+                    <img src="img/userAvatar/admin.jpg" class="weibo-avatar"/>
+                    <div class="weibo-rest">
+                    	<span class="weibo-id"><a href="">Israfel</a></span><br />
+	                    <div class="weibo-content">
+	                    	さ・く・ら | 夏葡@予備アカウント #pixiv# <a href="http://t.cn/8sWXWZy">http://t.cn/8sWXWZy</a>
+	                    	<img src="img/weiboImage/xiaolang.jpg"class="weibo-image"/>
+	                    </div>
+	                    <div class="weibo-info">
+	                    	<span class="weibo-time">5月9日 20:20</span>
+							<span class="weibo-operation">转发 | 收藏 | 评论(4)</span>
+	                    </div>
+                    </div>
+				</div>
+			</div>
+			
+			<div class="content-block">
+				<div class="sub-content-block">
+					<!--
+                    	作者：felix.ym.liu@gmail.com
+                    	时间：2014-05-19
+                    	描述：test微博3：转发文字
+                    -->
+                    <img src="img/userAvatar/tangque.jpg" class="weibo-avatar"/>
+                    <div class="weibo-rest">
+                    	<span class="weibo-id"><a href="">唐缺_九州</a></span><br />
+	                    <div class="weibo-content">
+	                    	回复@鲶鱼_肚子饱了嘴还饿:妈的要不是你提醒我差点忘了第一场东决是在今天！ //@鲶鱼_肚子饱了嘴还饿:等着看比赛看到如此大快人心的消息必须赞一个
+	                    	<div class="weibo-forward">
+	                    		<div class="weibo-id-f">
+	                    			<a href="">@唐缺_九州</a>
+	                    		</div>
+	                    		<div class="weibo-content-f">
+	                    			半夜重看舌尖1，看到欲罢不能处，猛然发现能做宵夜解馋的人在睡觉……完了……
+	                    		</div>
+	                    		<div class="weibo-info-f">
+	                    			<span class="weibo-time-f">今天 02:44</span>
+	                    			<span class="weibo-operation-f">转发(1) | 评论(4)</span>
+	                    		</div>
+	                    	</div>
+	                    </div>
+	                    <div class="weibo-info">
+	                    	<span class="weibo-time">今天 03:15</span>
+							<span class="weibo-operation"> 转发 | 收藏 | 评论(1)</span>
+	                    </div>
+                    </div>
+				</div>
+			</div>
+			
+			<div class="content-block">
+				<div class="sub-content-block">
+					<!--
+                    	作者：felix.ym.liu@gmail.com
+                    	时间：2014-05-19
+                    	描述：test微博4：转发图片
+                    -->
+                    <img src="img/userAvatar/tangque.jpg" class="weibo-avatar"/>
+                    <div class="weibo-rest">
+                    	<span class="weibo-id"><a href="">唐缺_九州</a></span><br />
+	                    <div class="weibo-content">
+	                    	说得就跟有声音就不是神经病一样……
+	                    	<div class="weibo-forward">
+	                    		<div class="weibo-id-f">
+	                    			<a href="">@Vista看天下</a>
+	                    		</div>
+	                    		<div class="weibo-content-f">
+	                    			【广场舞舞者：跳舞没有声响别人还以为我神经病】广场舞如何不扰民？有些地方对场地、时长、时段、音量等进行限制；有的发放耳机推广“无声广场舞”，此举受到附近居民和网友的力挺。不过也有舞者认为“没有一点声响，就一群人在那里静悄悄地比划，别人看了还以为是神经病呢。<a href="http://t.cn/RvZ51CI">http://t.cn/RvZ51CI</a>
+	                    			<img src="img/weiboImage/guangchangwu.jpg" class="weibo-image-f"/>
+	                    		</div>
+	                    		<div class="weibo-info-f">
+	                    			<span class="weibo-time-f">今天 09:18</span>
+	                    			<span class="weibo-operation-f">转发(288) | 评论(272)</span>
+	                    		</div>
+	                    	</div>
+	                    </div>
+	                    <div class="weibo-info">
+	                    	<span class="weibo-time">52分钟前</span>
+							<span class="weibo-operation">转发(25) | 收藏 | 评论</span>
+	                    </div>
+                    </div>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		<div class="block footer">
+			<!--
+            	其他链接&内容
+            -->
+            <center>
+				<a href="http://weibo.com/whynotme">关注Israfel@Sina</a><br /><br />
+            	<span class="copyright">© 1999-2014 Doge, Inc. or its affiliates</span>
+            </center>
+		</div>
+		
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+</html>
